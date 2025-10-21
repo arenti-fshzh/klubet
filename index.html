@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ - Klubet – FSHZH / HUBEX</title>
+<meta name="description" content="FAQ interaktiv (accordion) për klubet: Blu, Jeshil, Bardhë, Kuq, Zi.">
+<style>
+  :root{
+    --bg:#ffffff;
+    --fg:#0f172a;
+    --muted:#64748b;
+    --accent:#0ea5e9;
+    --border:#e2e8f0;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,'Helvetica Neue',Arial,'Noto Sans',sans-serif;line-height:1.55}
+  .wrap{max-width:900px;margin:48px auto;padding:0 20px}
+  header{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:8px}
+  h1{font-size:clamp(24px,4vw,36px);margin:0}
+  p.lead{color:var(--muted);margin:0 0 24px 0}
+  .toolbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin:16px 0 24px 0}
+  .toolbar input[type="search"]{flex:1 1 260px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:15px;outline:none}
+  .toolbar button{border:1px solid var(--border);background:#f8fafc;border-radius:10px;padding:10px 14px;cursor:pointer}
+  .toolbar button:hover{background:#eef2f7}
+  section{margin:28px 0}
+  section h2{font-size:20px;margin:0 0 12px 0;color:var(--accent)}
+  details{border:1px solid var(--border);border-radius:12px;padding:12px 14px;margin:10px 0;background:#fff;transition:box-shadow .2s}
+  details[open]{box-shadow:0 8px 24px rgba(2,6,23,.06)}
+  summary{list-style:none;cursor:pointer;font-weight:600}
+  summary::-webkit-details-marker{display:none}
+  .q{display:inline-block;margin-right:8px;color:var(--accent)}
+  .answer{margin:8px 0 0 0;color:#1f2937}
+  .meta{font-size:13px;color:var(--muted);margin-top:4px}
+  footer{margin:40px 0 12px 0;color:var(--muted);font-size:13px}
+  hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+  @media print{
+    .toolbar{display:none}
+    details{border:none;padding:0;margin:6px 0}
+    details:not([open]){display:none} /* Print only opened */
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Most Frequently Asked Questions (FAQ)</h1>
+    </header>
+    <p class="lead">Rubrikë e pyetjeve më të shpeshta për <strong>klubet</strong> (Blu, Jeshil, Bardhë, Kuq, Zi). Kliko mbi pyetjen për të hapur përgjigjen.</p>
+
+    <div class="toolbar">
+      <input id="filter" type="search" placeholder="Kërko pyetje ose fjalëkyçe…">
+      <button id="expandAll" type="button" title="Hap të gjitha">Zgjero të gjitha</button>
+      <button id="collapseAll" type="button" title="Mbyll të gjitha">Mbyll të gjitha</button>
+    </div>
+
+    <section>
+      <h2>FAQ – Të përgjithshme</h2>
+
+      <details>
+        <summary><span class="q">Q1.</span>Çfarë janë klubet?</summary>
+        <div class="answer">Klubet janë hapësira të hapura për bashkëpunim, ide dhe energji. Ato nuk kanë hierarki, por funksionojnë si laboratorë të lirë për zhvillimin e iniciativave të stafit.</div>
+        <div class="meta">Kategori: Të përgjithshme</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q2.</span>Cilat janë klubet e krijuara?</summary>
+        <div class="answer">
+          • Klubi Blu – Inovacion & Teknologji<br>
+          • Klubi Jeshil – Mjedis & Sport<br>
+          • Klubi Bardhë – Edukim, Art & Kulturë<br>
+          • Klubi i Kuq – Socializim & Komunitet<br>
+          • Klubi i Zi – Komunikim & Ide
+        </div>
+        <div class="meta">Kategori: Të përgjithshme</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q3.</span>Kush mund të bëhet pjesë e një klubi?</summary>
+        <div class="answer">Çdo punonjës mund të zgjedhë një klub, sipas interesave dhe aftësive me të cilat dëshiron të kontribuojë. Pjesëmarrja është vullnetare dhe e hapur për të gjithë punonjësit e FSHZH -së dhe OZHR -ve, si edhe për praktikantët.</div>
+        <div class="meta">Kategori: Anëtarësimi</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q4.</span>Si organizohen takimet?</summary>
+        <div class="answer">Takimet planifikohen sipas një kalendari të përbashkët. Burimet njerëzore janë koordinatori i përkohshëm që do të organizojë takimet e para.</div>
+        <div class="meta">Kategori: Organizim</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q5.</span>Çfarë pritet nga anëtarët?</summary>
+        <div class="answer">Pjesëmarrje aktive, sjellje bashkëpunuese, propozim idesh konkrete dhe respektim i vlerave të institucionit.</div>
+        <div class="meta">Kategori: Anëtarësimi</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q6.</span>Kush e koordinon një klub?</summary>
+        <div class="answer">Çdo klub ka një koordinator të zgjedhur nga anëtarët, me mandat 3-mujor. Roli i koordinatorit nuk është drejtues, por organizues i energjisë – ndihmon që idetë të kthehen në veprim. Koordinatori kujdeset për rendin e punës, fton pjesëmarrësit dhe raporton rezultatet e takimeve.</div>
+        <div class="meta">Kategori: Organizim</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q8.</span>Si raportohen aktivitetet?</summary>
+        <div class="answer">Pas çdo aktiviteti përgatitet një përmbledhje e shkurtër: përshkrimi, data, pjesëmarrësit, rezultatet kryesore dhe sugjerime për përmirësim.</div>
+        <div class="meta">Kategori: Raportim</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q9.</span>A ka mbështetje financiare/logjistike?</summary>
+        <div class="answer">Po. Klubet nuk kanë buxhet fiks, por aplikojnë me propozim projekti (me përshkrim të shkurtër dhe buxhet të kërkuar). Projektet e miratuara futen në kalendarin e aktiviteteve dhe zbatohen në bashkëpunim me drejtoritë përkatëse, të koordinuara nga DGFO.</div>
+        <div class="meta">Kategori: Mbështetje</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Q10.</span>Me kë të kontaktoj për paqartësi?</summary>
+        <div class="answer">Drejtohuni te Drejtoria e Burimeve Njerëzore ose te koordinatori i klubit tuaj.</div>
+        <div class="meta">Kategori: Të përgjithshme</div>
+      </details>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>FAQ – Specifike për Klubet</h2>
+
+      <details>
+        <summary><span class="q">Blu / Inovacion & Teknologji – Çfarë lloj aktivitetesh mund të zhvillojmë?</summary>
+        <div class="answer">Punëtori për ideim teknologjik, demonstrime prototipash, mini‑hackathone, prezantime mbi AI/IoT, vizita laboratorësh, etj.</div>
+        <div class="meta">Kategori: Klubi Blu</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Jeshil / Mjedis & Sport – Si lidhet me mirëqenien në punë?</summary>
+        <div class="answer">Aktivitete ekologjike, fushata riciklimi, vrap/joga/grupe sportive që forcojnë shëndetin dhe frymën ekipore.</div>
+        <div class="meta">Kategori: Klubi Jeshil</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Bardhë / Edukim, Art & Kulturë – Cilat janë disa nga aktivitetet?</summary>
+        <div class="answer">Klubi organizon ekspozita, aktivitete artistike, prezantime kulturore dhe nisma për promovimin e vlerave edukuese dhe krijuese brenda institucionit.</div>
+        <div class="meta">Kategori: Klubi Bardhë</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Kuq / Socializim & Komunitet – A mund të përfshihen aktivitete vullnetare?</summary>
+        <div class="answer">Po, duke bashkëpunuar me komunitete të ndryshme (donacione, aktivitete sociale).</div>
+        <div class="meta">Kategori: Klubi i Kuq</div>
+      </details>
+
+      <details>
+        <summary><span class="q">Zi / Komunikim & Ide – Çfarë prodhojmë konkretisht?</summary>
+        <div class="answer">Fushata të brendshme komunikimi, podcast, “ide box” dhe debate tematike.</div>
+        <div class="meta">Kategori: Klubi i Zi</div>
+      </details>
+    </section>
+
+    <footer>
+      © 2025 — FAQ për klubet. Ky dokument është interaktiv (accordion). Mund të hapet lokalisht në çdo kompjuter.
+    </footer>
+  </div>
+
+<script>
+  // Expand/Collapse controls
+  const expandAllBtn = document.getElementById('expandAll');
+  const collapseAllBtn = document.getElementById('collapseAll');
+  const filterInput = document.getElementById('filter');
+  const allDetails = () => Array.from(document.querySelectorAll('details'));
+
+  expandAllBtn.addEventListener('click', () => {
+    allDetails().forEach(d => d.open = true);
+  });
+  collapseAllBtn.addEventListener('click', () => {
+    allDetails().forEach(d => d.open = false);
+  });
+
+  // Simple filter by question/answer text
+  filterInput.addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    allDetails().forEach(d => {
+      const text = (d.textContent || '').toLowerCase();
+      d.style.display = text.includes(q) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
